@@ -33,5 +33,9 @@ int main() {
                   << minSubscriptions << " subscriptions to reach $" << targetAmount << ".\n";
     }
 
+    std::cout << "\nPress Enter to exit...";
+    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Clear the input buffer
+    std::cin.get(); // Wait for Enter key
+
     return 0;
 }
